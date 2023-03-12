@@ -10,7 +10,7 @@ pipeline {
         stage("Build") {
             steps {
                 echo "building... "
-                echo ${BUILD_ID}
+                echo "${BUILD_ID}"
             }
         }
         
