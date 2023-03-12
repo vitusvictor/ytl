@@ -9,7 +9,6 @@ pipeline {
     stages {
         stage("Build") {
             steps {
-                echo "building... "
                 echo "build id: ${BUILD_ID}"
             }
         }
