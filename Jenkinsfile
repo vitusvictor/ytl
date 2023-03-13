@@ -27,7 +27,7 @@ pipeline {
     stages {
         stage("Build") {
             when {
-                params.executeTest == true
+                params.executeTests == true
 //                 expression {
 //                     BRANCH_NAME == "dev" && CODE_CHANGE == true
 //                 }
