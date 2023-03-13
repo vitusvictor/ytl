@@ -39,6 +39,10 @@ pipeline {
             steps {
                 echo "build id: ${BUILD_ID}"
                 echo "branch url: ${BRANCH_NAME}"
+                script {
+                    // i am able to use 'def' below because of the 'script' tag
+                    def name = "somto"
+                }
             }
         }
         
@@ -53,4 +57,15 @@ pipeline {
             }   
         }
     }
+    
+    post {
+        alway {
+            mail to: "vitusvictor41@gmail.com",
+                body: "body",
+                subject: "done building"
+                
+        }
+                
+    }
+            
 }
