@@ -2,9 +2,9 @@
 
 pipeline {
     agent any
-    tools {
-        maven "Maven"
-    }
+//     tools {
+//         maven "Maven"
+//     }
     
     parameters {
         string(name: "STRNAME", defaultValue: "", description: "string description")
@@ -21,7 +21,7 @@ pipeline {
     
     triggers {
 //         pollSCM "* * * * *"
-        cron("0 0 * * *")
+//         cron("0 0 * * *")
     }
     
     stages {
