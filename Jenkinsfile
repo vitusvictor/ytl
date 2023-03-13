@@ -65,7 +65,7 @@ pipeline {
 //                 body: "body"
                 emailext body: 'A Test EMail',
                         subject: 'Subject',
-                        to: 'you@example.com',
+                        to: 'vitusvictor41@gmail.com onyibalusomto@outlook.com onyibalusomto@gmail.com',
                         mimeType: 'text/plain'
                 
         }
