@@ -61,8 +61,8 @@ pipeline {
     post {
         always {
             mail to: "vitusvictor41@gmail.com",
-                subject: "done building"
-                body: "body",
+                subject: "done building",
+                body: "body"
                 
                 
         }
