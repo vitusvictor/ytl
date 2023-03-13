@@ -10,8 +10,8 @@ pipeline {
     
     
     triggers {
+//         pollSCM "* * * * *"
         cron("* * * * *")
-        pollSCM "* * * * *"
     }
     
     stages {
@@ -24,7 +24,7 @@ pipeline {
             
             steps {
                 echo "build id: ${BUILD_ID}"
-                echo "branch url: ${BRANCH_URL}"
+                echo "branch url: ${BRANCH_NAME}"
             }
         }
         
