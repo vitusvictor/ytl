@@ -39,6 +39,7 @@ pipeline {
             steps {
                 echo "build id: ${BUILD_ID}"
                 echo "branch url: ${BRANCH_NAME}"
+                echo "credentials: ${SERVER_CREDENTIALS}"
                 script {
                     // i am able to use 'def' below because of the 'script' tag
                     def name = "somto"
