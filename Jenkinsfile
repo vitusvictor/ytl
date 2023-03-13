@@ -60,10 +60,13 @@ pipeline {
     
     post {
         always {
-            mail to: "vitusvictor41@gmail.com",
-                subject: "done building",
-                body: "body"
-                
+//             mail to: "vitusvictor41@gmail.com",
+//                 subject: "done building",
+//                 body: "body"
+                emailext body: 'A Test EMail',
+                        subject: 'Subject',
+                        to: 'you@example.com',
+                        mimeType: 'text/plain'
                 
         }
                 
